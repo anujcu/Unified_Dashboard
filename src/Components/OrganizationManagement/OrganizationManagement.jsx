@@ -1,8 +1,11 @@
 import { ICON_ACTIVE_BADGE, ICON_ADD, ICON_CANCEL_BADGE, ICON_FILTER_OPTION, ICON_INVITE_MEMBER, ICON_INVITED_BADGE, ICON_TABLE_SORTING } from "../../Constants/Constants";
+import SubSideNavBar from "../Common/SubSideNavBar/SubSideNavBar";
 import './OrganizationManagement.css';
 
 const OrganizationManagement=()=>{
     return(
+        <div className="BodyContentWrapper">
+            <SubSideNavBar/>
         <div className="organizationManagementPage">
       
       <div className="tabDesignHeader">
@@ -247,6 +250,8 @@ const OrganizationManagement=()=>{
           </div>
       </div>
         </div>
+        </div>
+        
     )
 }
 export default OrganizationManagement;

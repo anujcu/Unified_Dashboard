@@ -1,6 +1,7 @@
+import { NavLink } from "react-router-dom";
 import { ICON_ANGLE_DOWN } from "../../../Constants/Constants";
 
-const SideNavItem=(props)=>{
+const SideNavItem=(props,{toggleSideNavbar})=>{
      const menuItems=props;
      const SubmenuItems=menuItems.menuItems.subMenu;
     return(
@@ -9,6 +10,7 @@ const SideNavItem=(props)=>{
             <div className="sideMenuItemInfo">
             <img src={menuItems.menuItems.menuIcon} alt="IconOrganization" className={menuItems.menuItems.className}/>
             <span>{menuItems.menuItems.name}</span>
+            
             </div>
             {
                 SubmenuItems.length==0?'':<button className="sideMenuItemToggleIconBtn">
@@ -22,7 +24,8 @@ const SideNavItem=(props)=>{
               {
                    SubmenuItems.map((item)=>
                    {
-                     return <p key={item.name} className={`sideMenuItemSubItem ${item.isActive?'active':''}`}>{item.name}</p>
+                     return <NavLink to={item.linkTo}  key={item.name}
+                     className={({ isActive }) => (isActive ? 'active' : 'inactive')}><p  className="sideMenuItemSubItem">{item.name}</p></NavLink> 
                    })
               }
           </div>

@@ -8,24 +8,29 @@
         "className":"iconOrganization",
         "subMenu": [{
             "name":"Member and Department",
-            "isActive":true
+            "isActive":true,
+            "linkTo":"/organization"
         },
         {
             "name":"Role",
-            "isActive":false
+            "isActive":false,
+            "linkTo":"/role"
 
         },
         {
             "name":"Unit",
-            "isActive":false
+            "isActive":false,
+            "linkTo":"/unit"
         },
         {
             "name":"User Group",
-            "isActive":false
+            "isActive":false,
+            "linkTo":"/user_group"
         },
         {
             "name":"Field Management",
-            "isActive":false
+            "isActive":false,
+            "linkTo":"/field_Management"
         }]
     },
     {
@@ -36,11 +41,13 @@
         "className":"iconTrustedParty",
         "subMenu": [{
             "name":"Organization List",
-            "isActive":false
+            "isActive":false,
+            "linkTo":"/organization_list"
         },
         {
             "name":"Global Setting",
-            "isActive":false
+            "isActive":false,
+            "linkTo":"/global_setting"
         }]
     },
     {

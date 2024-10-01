@@ -2,27 +2,28 @@ import {  ICON_HIDE_NAVIGATION, ICON_ORGANIZATION_VIEW } from "../../../Constant
 import './SideNavBar.css';
 import MenuList from "../../../Mocks/SideMenu.json";
 import SideNavItem from "./SideNavItem";
+import { useState } from "react";
 
 
 const SideNavBar=()=>{
     const {sideMenu}=MenuList;
+    //local state side Nav bar toggle
+    const [toggleSideNavbar,setToggleSideNavbar]= useState(true);
     return(
-        <div className="SideNavBarWrapper">
+        <div className={`SideNavBarWrapper ${toggleSideNavbar?'':'collapsed'}`}>
             <div className="SideNavBarHeading">
                 <img src={ICON_ORGANIZATION_VIEW} alt="OrganizationView" className="SideNavBarHeadingIcon"/>
                 <span>Organization View</span>
+                
             </div>
             <div className="SideNavBarBody">
             {
                 sideMenu.map((item)=><SideNavItem key={item.id} menuItems={item}/>)
             }
-             
-           
-
             </div>
             <div className="SideNavBarFooter">
-            <div className="SideNavBarFooterItem">
-                    <img src={ICON_HIDE_NAVIGATION} alt="IconCollapseSideMenu" className="IconCollapseSideMenu"/>
+            <div className="SideNavBarFooterItem" onClick={()=>setToggleSideNavbar(!toggleSideNavbar)}>
+                    <img src={ICON_HIDE_NAVIGATION} alt="IconCollapseSideMenu"  className="IconCollapseSideMenu"/>
                     <span>Hide Navigation</span>
                 </div>
             </div>

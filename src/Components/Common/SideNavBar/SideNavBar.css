@@ -60,7 +60,7 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
-.sideMenuItemSubItem.active {
+.active .sideMenuItemSubItem {
     color: var(--colorPrimary);
 }
 .sideMenuItemInfo img.iconWorkPlace {
@@ -72,5 +72,11 @@
  {
     height: 23px;
     width: 28px;
+}
+.SideNavBarWrapper a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
 }
 

@@ -5,6 +5,7 @@ import Header from './Components/Common/Header/Header'
 import SideNavBar from './Components/Common/SideNavBar/SideNavBar'
 import UserContext from './Utils/UserContext'
 import BodyContent from './Components/BodyContent/BodyContent'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   const [userInfo,setUserInfo]=useState([]);
@@ -26,6 +27,7 @@ function App() {
     <Header/>
     <div className='bodyWrapper'>
       <SideNavBar/>
+      <Outlet></Outlet>
       <BodyContent/>
     
     </div>
