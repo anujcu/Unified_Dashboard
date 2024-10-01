@@ -8,6 +8,7 @@
     column-gap: 5px;
     padding: 4px 0;
     position: relative;
+    cursor: pointer;
 }
 .SideNavBarHeading img,.sideMenuItem img,.SideNavBarFooterItem img{
     height: 24px;
@@ -41,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .sideMenuItem .sideMenuItemToggleIcon {
     height: 18px;
@@ -80,3 +82,74 @@
     cursor: pointer;
 }
 
+
+.SideNavBarWrapper.collapsed{
+    position: relative;
+    width: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SideNavBarHeading span,
+.SideNavBarWrapper,
+.sideMenuItemInfo  span,
+.SideNavBarFooterItem  span,
+.sideMenuItemSubItem
+{
+    transition: all 0.3s ease;
+}
+.SideNavBarWrapper.collapsed .sideMenuItemSubItem{
+    font-size: 0;
+    padding:0;
+}
+.SideNavBarWrapper.collapsed .SideNavBarHeading span ,
+.SideNavBarWrapper.collapsed .sideMenuItemInfo  span,
+.SideNavBarWrapper.collapsed .SideNavBarFooterItem  span
+{
+    font-size: 0 ;
+}
+.SideNavBarWrapper.collapsed .IconCollapseSideMenu{
+    transform: rotate(180deg);
+}
+
+
+.SideNavBarWrapper.collapsed .sideMenuItemToggleIconBtn{
+    display: none;
+}
+.SideNavBarWrapper.collapsed .SideNavBarBody{
+    overflow: visible;
+}
+.SideNavBarWrapper.collapsed .sideMenuItemSubItemList .sideMenuItemSubItem{
+    font-size: 14px;
+    padding: 5px 0;
+}
+.SideNavBarWrapper.collapsed .sideMenuItemSubItemList{
+    position: absolute;
+    width: 160px;
+    background: var(--colorWhite);
+    border: 1px solid var(--colorGray);
+    z-index: 1;
+    padding: 12px;
+    top: 8px;
+    left: 39px;
+    border-radius: 12px;
+    display:none;
+}
+.SideNavBarWrapper.collapsed .SideNavBarHeading,.SideNavBarWrapper.collapsed  .sideMenuItem,.SideNavBarWrapper.collapsed  .SideNavBarFooterItem,
+.SideNavBarWrapper.collapsed .sideMenuItemInfo{
+    column-gap: 0;
+}
+.SideNavBarWrapper.collapsed .sideManuItemWrapper:hover .sideMenuItemSubItemList{
+    display: block;
+}
+.SideNavBarWrapper.collapsed .sideManuItemWrapper {
+    position: relative;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+.SideNavBarWrapper.collapsed  .sideMenuItemSubItem:hover{
+    color:var(--colorPrimary);
+}

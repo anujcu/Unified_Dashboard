@@ -11,7 +11,7 @@ const SideNavBar=()=>{
     const {sideMenu}=MenuList;
 
    //subscribing a store
-   const sideMenuItem=useSelector((store)=>store.sideMenu.toggle);
+   //const sideMenuItem=useSelector((store)=>store.sideMenu.toggle);
 
     //update sidemenuCollapse of not Flag in store
     const [tFlag,setTflag]=useState(false);
@@ -23,7 +23,6 @@ const SideNavBar=()=>{
         dispatchSideMenuCollapseFlag(toggleSideMenu(tFlag));
     }
     //make collapseable menus
-    const [showIndex, setShowIndex]=useState(0);
 
 
     return(
@@ -35,9 +34,7 @@ const SideNavBar=()=>{
             </div>
             <div className="SideNavBarBody">
             {
-                sideMenu.map((item,index)=><SideNavItem key={item.id} menuItems={item} 
-                setShowIndexhandle={()=>setShowIndex(index)}
-                showItem={index==showIndex?true:false}/>)
+                sideMenu.map((item)=><SideNavItem key={item.id} menuItems={item}/>)
             }
             </div>
             <div className="SideNavBarFooter">

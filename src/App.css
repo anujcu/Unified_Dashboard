@@ -54,12 +54,11 @@ body{
 }
 .bodyWrapper {
   padding-top: 45px;
-  display: grid;
-  grid-template-columns: 240px 1fr;
+  display: flex;
 }
 
 .SideNavBarWrapper {
-  max-width: 240px;
+  width: 260px;
   height: calc(100vh - 45px);
   align-items: flex-start;
   background: var(--colorWhite);
@@ -78,6 +77,35 @@ body{
   align-items: flex-start;
   width: 100%;
 }
-
-
+/* custom checkbox css */
+.checkboxWrapper{
+  position: relative;
+}
+.checkboxWrapper .checkBoxInput{display: none;}
+.checkboxWrapper .checkBoxInput + .checkBoxIcon{
+  height: 15px;
+  width: 15px;
+  display: flex;
+  border: 1px solid var(--colorGray);
+  border-radius: 3px;
+  background: var(--colorWhite);
+  position: relative;
+  cursor: pointer;
+}
+.checkboxWrapper .checkBoxInput + .checkBoxIcon::after{
+  content: '';
+  height: 4px;
+  width: 9px;
+  border-bottom: 3px solid var(--colorPrimary);
+  border-left: 3px solid var(--colorPrimary);
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.checkboxWrapper .checkBoxInput:checked + .checkBoxIcon::after{
+  opacity: 1;
+}
 

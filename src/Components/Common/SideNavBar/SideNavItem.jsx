@@ -3,7 +3,7 @@ import { ICON_ANGLE_DOWN,ICON_ORGANIZATION_MANAGAMENT } from "../../../Constants
 import { useDispatch } from "react-redux";
 import {  updateBreadcrumb } from "../../../Store/Slices/sideMenuSlice";
 
-const SideNavItem=(props,{showItem,setShowIndexhandle})=>{
+const SideNavItem=(props)=>{
 
     //updating header with active link
     const dispatchBreadcrumbInfo=useDispatch();
@@ -12,8 +12,8 @@ const SideNavItem=(props,{showItem,setShowIndexhandle})=>{
         }
     
         //handle Collapse Menu Items
-        const handleClick=()=>{
-            setShowIndexhandle();
+        const handleClick=(id)=>{
+            console.log(id);
        }
 
      const menuItems=props;
@@ -27,20 +27,23 @@ const SideNavItem=(props,{showItem,setShowIndexhandle})=>{
             
             </div>
             {
-                SubmenuItems.length==0?'':<button className="sideMenuItemToggleIconBtn" onClick={handleClick}>
+                SubmenuItems.length==0?'':<button className="sideMenuItemToggleIconBtn" onClick={()=>handleClick(menuItems.menuItems.id)}>
                 <img src={ICON_ANGLE_DOWN} alt="IconOrganization" className="sideMenuItemToggleIcon" />
                 </button>
             }
             
         </div>
-        {showItem &&
+        {
               SubmenuItems.length==0?'':<div className="sideMenuItemSubItemList">
               {
                    SubmenuItems.map((item)=>
                    {
-        return <NavLink to={item.linkTo}  key={item.name} onClick={()=>updateBreadcrumbHande([ {name:item.name,icon:item.iconName
+                    return <NavLink to={item.linkTo}  
+                    key={item.name} 
+                    onClick={()=>updateBreadcrumbHande([ {name:item.name,icon:item.iconName
                       }])}
-                     className={({ isActive }) => (isActive ? 'active' : 'inactive')}><p  className="sideMenuItemSubItem">{item.name}</p></NavLink> 
+                     className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+                    <p className="sideMenuItemSubItem">{item.name}</p></NavLink> 
                    })
               }
           </div>

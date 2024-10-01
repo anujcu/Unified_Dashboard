@@ -1,0 +1,16 @@
+.errorPage {
+  display: flex;
+  background: var(--colorWhite);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.errorPage h1 {
+  font-weight: 600;
+  color: var(--colorRed);
+}
+.errorPage p{
+  font-weight: 400;
+  font-size: 21px;
+}
