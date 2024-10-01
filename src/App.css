@@ -7,7 +7,9 @@
 --colorPrimary:#4B49AC;
 --colorPrimary100:#ECF6FF;
 --colorGray:#dddddd;
+--colorBlack:#000000;
 --colorBlack50: #555;
+--colorblack30:#444;
 --colorGreen:#0D9420;
 --colorGreen100:#E7FFE1;
 --colorTableHeader:#F2F3F5;
@@ -47,7 +49,8 @@ overflow: hidden;
   }
   
   *::-webkit-scrollbar-thumb:hover {
-  background: var(--colorGray); /* color of the scroll thumb on hover */
+  background: var(--colorBlack50); 
+  cursor: pointer;/* color of the scroll thumb on hover */
   }
 body{
   background-color:var(--colorLightGray) ;

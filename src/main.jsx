@@ -9,7 +9,8 @@ import ErrorComponent from './Components/Common/ErrorComponent/ErrorComponent.js
 //lazy loading/ chunking
 const OrganizationManagement=lazy(()=>
   import("./Components/OrganizationManagement/OrganizationManagement.jsx"));
-
+const Dashboard=lazy(()=>
+  import("./Components/Dashboard/Dashboard.jsx"));
 
 const appRouter=createBrowserRouter(
   [
@@ -18,8 +19,12 @@ const appRouter=createBrowserRouter(
       element:<App/>,
       children:[
         {
-          path:"organization/",
-          element:<Suspense fallback={<h1>Organisation Loading</h1>}><OrganizationManagement/></Suspense>
+          path:"/",
+          element:<Suspense fallback={<h1>Loading Page...</h1>}><Dashboard/></Suspense>
+        },
+        {
+          path:"/organization",
+          element:<Suspense fallback={<h1>Loading Page...</h1>}><OrganizationManagement/></Suspense>
         },
         {
           path:"/role",

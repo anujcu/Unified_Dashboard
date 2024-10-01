@@ -188,6 +188,8 @@ const OrganizationManagement=()=>{
                     <button className="tableBodyAction actionView">View</button>
                 </div>
                 </div>
+
+
                 <div className="tableBodyRow">
                 <div className="tableBodyCell">
                 <div className="checkboxWrapper">
@@ -219,6 +221,296 @@ const OrganizationManagement=()=>{
                     <button className="tableBodyAction actionView">View</button>
                 </div>
                 </div>
+
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
+                <div className="tableBodyRow">
+                <div className="tableBodyCell">
+                <div className="checkboxWrapper">
+                        <label color="checkBox2">
+                            <input type="checkbox" id="checkBox2" className="checkBoxInput"/>
+                            <span className="checkBoxIcon"></span>
+                        </label>
+                    </div>
+                </div>
+                <div className="tableBodyCell">
+                    <div className="circularTextClip color5">4th</div>
+                    <span className="tableBodyCellValue">4th Member</span>
+                </div>
+                <div className="tableBodyCell">
+                    <span className="tableBodyCellBadge badgeInvited">
+                    <img src={ICON_INVITED_BADGE} alt="iconInvitedBadge" className="tabFilterBtnADDIMG"/> Invited
+                    </span>
+                    <button className="tableBodyCellLink">Remind</button>
+                </div>
+                <div className="tableBodyCell">
+                 <span className="tableBodyCellValue">anujcu@gmail.com</span>
+                </div>
+                <div className="tableBodyCell">
+                <span className="tableBodyCellValue">Admin</span>
+                </div>
+                <div className="tableBodyCell">
+                    <button className="tableBodyAction actionDelete">Delete</button>
+                    <button className="tableBodyAction actionEdit">Edit</button>
+                    <button className="tableBodyAction actionView">View</button>
+                </div>
+                </div>
+
                 <div className="tableBodyRow">
                 <div className="tableBodyCell">
                 <div className="checkboxWrapper">

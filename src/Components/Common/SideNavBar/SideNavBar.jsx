@@ -3,15 +3,15 @@ import './SideNavBar.css';
 import MenuList from "../../../Mocks/SideMenu.json";
 import SideNavItem from "./SideNavItem";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleSideMenu } from "../../../Store/Slices/sideMenuSlice";
+import { toggleSideMenu, updateBreadcrumb } from "../../../Store/Slices/sideMenuSlice";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 
 const SideNavBar=()=>{
     const {sideMenu}=MenuList;
 
-   //subscribing a store
-   //const sideMenuItem=useSelector((store)=>store.sideMenu.toggle);
+
 
     //update sidemenuCollapse of not Flag in store
     const [tFlag,setTflag]=useState(false);
@@ -24,14 +24,26 @@ const SideNavBar=()=>{
     }
     //make collapseable menus
 
+       //updating header with active link
+    const dispatchBreadcrumbInfo=useDispatch();
+    const updateBreadcrumbHande=(item)=>{
+        dispatchBreadcrumbInfo(updateBreadcrumb(item));
+        }
+
 
     return(
         <div className={`SideNavBarWrapper ${tFlag?'collapsed':''}`}>
+            <NavLink to="/" 
+    onClick={()=>updateBreadcrumbHande([ {name:"Dashboard",icon:"./src/assets/img/Icon_organizationManagement.svg"}])}
+    className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                      >
             <div className="SideNavBarHeading">
                 <img src={ICON_ORGANIZATION_VIEW} alt="OrganizationView" className="SideNavBarHeadingIcon"/>
-                <span>Organization View</span>
+                <span>Dashboard</span>
                 
             </div>
+            </NavLink>
+           
             <div className="SideNavBarBody">
             {
                 sideMenu.map((item)=><SideNavItem key={item.id} menuItems={item}/>)

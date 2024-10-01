@@ -1,6 +1,9 @@
 .sideManuItemWrapper{
     position: relative;
 }
+.active .SideNavBarHeading span {
+    color: var(--colorPrimary);
+}
 .SideNavBarHeading,.sideMenuItem,.SideNavBarFooterItem
 {
     display: flex;

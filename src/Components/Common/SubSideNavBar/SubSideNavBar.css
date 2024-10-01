@@ -154,3 +154,6 @@
     overflow-x: hidden;
     height: 250px;
 }
+.subMenuChildLinks:hover{
+    color:var(--colorPrimary);
+}

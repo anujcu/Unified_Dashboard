@@ -128,6 +128,7 @@
 
     background: var(--colorTableHeader);
     border-radius: 5px 5px 0 0;
+    width: calc(100% - 10px);
 }
 .tableCol {
     display: flex;
@@ -144,6 +145,11 @@
 .tableColHeading {
     font-weight: 400;
     font-size: 14px;
+}
+.tableBody {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 400px;
 }
 .tableColsortIcon {
     height: 20px;
