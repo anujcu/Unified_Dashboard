@@ -2,9 +2,13 @@ import { useContext } from "react";
 import { LOGO_IMG,ICON_ORGANIZATION_MANAGAMENT,ICON_HELP,ICON_SUPPORT,ICON_HEADER_MENU } from "../../../Constants/Constants";
 import './Header.css'
 import UserContext from "../../../Utils/UserContext";
+import { useSelector } from "react-redux";
 
 
 const Header =()=>{
+
+   //subscribing a store
+   const sideMenuItem=useSelector((store)=>store.sideMenu.item);
 
    const {loggedInUser,UserRole}= useContext(UserContext)
     return(
@@ -15,8 +19,8 @@ const Header =()=>{
                 <span>ScientificStudy</span>
             </div>
             <div className="Breadcrumb">
-                <img src={ICON_ORGANIZATION_MANAGAMENT} alt="orgIcon"/>
-                <span> Member and Department</span>
+            <img src={sideMenuItem[0].icon} alt="orgIcon"/>
+                <span>{sideMenuItem[0].name}</span>
             </div>
            
         </div>

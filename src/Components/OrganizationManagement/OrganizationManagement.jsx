@@ -1,10 +1,14 @@
+import { useSelector } from "react-redux";
 import { ICON_ACTIVE_BADGE, ICON_ADD, ICON_CANCEL_BADGE, ICON_FILTER_OPTION, ICON_INVITE_MEMBER, ICON_INVITED_BADGE, ICON_TABLE_SORTING } from "../../Constants/Constants";
 import SubSideNavBar from "../Common/SubSideNavBar/SubSideNavBar";
 import './OrganizationManagement.css';
 
 const OrganizationManagement=()=>{
+    //get the class name when sidemenu is collapsed
+  const toggleMenuFlag=useSelector((store)=>store.sideMenu.toggleMenu);
+
     return(
-        <div className="BodyContentWrapper">
+        <div className={`BodyContentWrapper ${toggleMenuFlag?'':'menuCollapsed'}`}>
             <SubSideNavBar/>
         <div className="organizationManagementPage">
       

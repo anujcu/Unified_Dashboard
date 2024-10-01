@@ -2,15 +2,32 @@ import {  ICON_HIDE_NAVIGATION, ICON_ORGANIZATION_VIEW } from "../../../Constant
 import './SideNavBar.css';
 import MenuList from "../../../Mocks/SideMenu.json";
 import SideNavItem from "./SideNavItem";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleSideMenu } from "../../../Store/Slices/sideMenuSlice";
 import { useState } from "react";
 
 
 const SideNavBar=()=>{
     const {sideMenu}=MenuList;
-    //local state side Nav bar toggle
-    const [toggleSideNavbar,setToggleSideNavbar]= useState(true);
+
+   //subscribing a store
+   const sideMenuItem=useSelector((store)=>store.sideMenu.toggle);
+
+    //update sidemenuCollapse of not Flag in store
+    const [tFlag,setTflag]=useState(false);
+
+    //toggle Hide/Show Menu
+    const dispatchSideMenuCollapseFlag=useDispatch();
+    const updateCollapseFlag=()=>{
+        setTflag(!tFlag)
+        dispatchSideMenuCollapseFlag(toggleSideMenu(tFlag));
+    }
+    //make collapseable menus
+    const [showIndex, setShowIndex]=useState(0);
+
+
     return(
-        <div className={`SideNavBarWrapper ${toggleSideNavbar?'':'collapsed'}`}>
+        <div className={`SideNavBarWrapper ${tFlag?'collapsed':''}`}>
             <div className="SideNavBarHeading">
                 <img src={ICON_ORGANIZATION_VIEW} alt="OrganizationView" className="SideNavBarHeadingIcon"/>
                 <span>Organization View</span>
@@ -18,11 +35,13 @@ const SideNavBar=()=>{
             </div>
             <div className="SideNavBarBody">
             {
-                sideMenu.map((item)=><SideNavItem key={item.id} menuItems={item}/>)
+                sideMenu.map((item,index)=><SideNavItem key={item.id} menuItems={item} 
+                setShowIndexhandle={()=>setShowIndex(index)}
+                showItem={index==showIndex?true:false}/>)
             }
             </div>
             <div className="SideNavBarFooter">
-            <div className="SideNavBarFooterItem" onClick={()=>setToggleSideNavbar(!toggleSideNavbar)}>
+            <div className="SideNavBarFooterItem" onClick={updateCollapseFlag} >
                     <img src={ICON_HIDE_NAVIGATION} alt="IconCollapseSideMenu"  className="IconCollapseSideMenu"/>
                     <span>Hide Navigation</span>
                 </div>

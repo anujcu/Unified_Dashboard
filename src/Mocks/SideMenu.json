@@ -9,28 +9,33 @@
         "subMenu": [{
             "name":"Member and Department",
             "isActive":true,
-            "linkTo":"/organization"
+            "linkTo":"/organization",
+            "iconName":"./src/assets/img/Icon_organizationManagement.svg"
         },
         {
             "name":"Role",
             "isActive":false,
-            "linkTo":"/role"
+            "linkTo":"/role",
+            "iconName":"./src/assets/img/Icon_workplace.svg"
 
         },
         {
             "name":"Unit",
             "isActive":false,
-            "linkTo":"/unit"
+            "linkTo":"/unit",
+            "iconName":"./src/assets/img/Icon_organizationManagement.svg"
         },
         {
             "name":"User Group",
             "isActive":false,
-            "linkTo":"/user_group"
+            "linkTo":"/user_group",
+            "iconName":"./src/assets/img/Icon_organizationManagement.svg"
         },
         {
             "name":"Field Management",
             "isActive":false,
-            "linkTo":"/field_Management"
+            "linkTo":"/field_Management",
+            "iconName":"./src/assets/img/Icon_organizationManagement.svg"
         }]
     },
     {
@@ -42,12 +47,14 @@
         "subMenu": [{
             "name":"Organization List",
             "isActive":false,
-            "linkTo":"/organization_list"
+            "linkTo":"/organization_list",
+            "iconName":"./src/assets/img/Icon_organizationManagement.svg"
         },
         {
             "name":"Global Setting",
             "isActive":false,
-            "linkTo":"/global_setting"
+            "linkTo":"/global_setting",
+            "iconName":"./src/assets/img/Icon_organizationManagement.svg"
         }]
     },
     {
