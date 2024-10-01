@@ -1,0 +1,83 @@
+:root {
+--fontFamily:"Roboto", sans-serif;
+--fontWeight:300;
+--fontStyle:normal;
+--colorLightGray:#eee;
+--colorWhite:#fff;
+--colorPrimary:#4B49AC;
+--colorPrimary100:#ECF6FF;
+--colorGray:#dddddd;
+--colorBlack50: #555;
+--colorGreen:#0D9420;
+--colorGreen100:#E7FFE1;
+--colorTableHeader:#F2F3F5;
+--colorRed:#D0256D;
+--colorRed100:#FDD8E5;
+--colorYellow100:#FFE542;
+--colorYellowDark:#6E6009;
+--colorGradient1:radial-gradient(circle, #DB84FA  0%, #FFA3F1 100%);
+--colorGradient2:radial-gradient(circle, #C69CFC 0%, #B9D6FF 100%);
+--colorGradient3:radial-gradient(circle, #8DBEFB 0%, #87F1FD 100%);
+--colorGradient4:radial-gradient(circle, #40D5CE 0%, #64EBFC 100%);
+--colorGradient5:radial-gradient(circle, #FFA9B0 0%, #FAF8A6 100%);
+--colorGradient6:radial-gradient(circle, #69F88B 0%, #9BFFB3 100%);
+overflow: hidden;
+}
+*{
+  font-family: var(--fontFamily);
+  font-weight: var(--fontWeight);
+  font-style: var(--fontStyle);
+  margin:0;
+  padding: 0;
+}
+/* Custom scrollbar styles */
+*::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+  border-radius:5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the tracking area */
+  border-radius:5px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+  background: var(--colorLightGray); /* color of the scroll thumb */
+  border-radius:5px;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+  background: var(--colorGray); /* color of the scroll thumb on hover */
+  }
+body{
+  background-color:var(--colorLightGray) ;
+}
+.bodyWrapper {
+  padding-top: 45px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+
+.SideNavBarWrapper {
+  max-width: 240px;
+  height: calc(100vh - 45px);
+  align-items: flex-start;
+  background: var(--colorWhite);
+  padding: 15px 10px;
+}
+.SubSideNavBar {
+  width: 100%;
+  max-width: 240px;
+  height: calc(100vh - 45px);
+  background: var(--colorPrimary100);
+  border-right: 1px solid var(--colorGray);
+}
+.BodyContentWrapper {
+  display: flex;
+  height: calc(100vh - 45px);
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+

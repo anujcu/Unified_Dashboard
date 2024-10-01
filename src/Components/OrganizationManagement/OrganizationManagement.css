@@ -1,0 +1,249 @@
+.organizationManagementPage {
+    width: 100%;
+}
+/* Tab CSS */
+.tabDesignHeader button {
+    padding: 9px 10px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: transparent;
+}
+.tabDesignHeader {
+    background: var(--colorWhite);
+    border-bottom: 1px solid var(--colorGray);
+    display: flex;
+    column-gap: 10px;
+}
+.tabDesignHeader .active {
+    color: var(--colorPrimary);
+    border-bottom-color: var(--colorPrimary);
+}
+.tabDesignBody {
+    padding: 10px;
+    background: var(--colorWhite);
+    height: calc(100vh - 104px);
+}
+/* Badges Wrapper CSS */
+.badgesContainer {
+    display: flex;
+    column-gap: 20px;
+    padding: 7px 0;
+}
+.badgeItem {
+    display: flex;
+    column-gap: 10px;
+    background: var(--colorPrimary100);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.badgeItemLabel,.badgeItemValue {
+    font-weight: 400;
+    font-size: 13px;
+}
+.badgeItemValue{
+    font-weight: 600;
+}
+.badgeItem.color-green {
+    background: var(--colorGreen100);
+}
+/* Table Filter Design */
+.tableDesignFiltersWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tableDesignFiltersLeft {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.tableDesignFilterItem {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 14px 5px 7px;
+    border: 1px solid var(--colorGray);
+    border-radius: 4px;
+}
+.tableDesignFiltersRight {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.tableFilterMoreOption {
+    border: 1px solid var(--colorGray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background: var(--colorWhite);
+    transition: all 0.3s ease;
+}
+.tableFilterMoreOption:hover{
+    outline: none;
+    background:var(--colorPrimary100);
+    cursor: pointer;
+}
+.tabFilterBtn {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 4px 10px;
+    border: 1px solid var(--colorPrimary);
+    color: var(--colorPrimary);
+    border-radius: 5px;
+    height: 30px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.tabFilterBtn:hover, .tabFilterBtn:focus{
+    outline: none;
+    cursor: pointer;
+}
+.tabFilterBtn span{
+    font-size: 14px;
+    font-weight: 400;
+}
+.tabFilterBtnINVMIMG {
+    height: 20px;
+}
+.tabFilterBtn.Btn_Primary {
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+}
+/* Table Css */
+.tableWrapper {
+    padding: 10px 0;
+}
+.tableHeader, .tableBodyRow {
+    display: grid;
+    grid-template-columns: 3% 32% 16% 20% 15% 14%;
+    align-items: center;
+    border-bottom: 1px solid var(--colorLightGray);
+}
+.tableHeader {
+
+    background: var(--colorTableHeader);
+    border-radius: 5px 5px 0 0;
+}
+.tableCol {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 8px 10px;
+}
+.tableBodyCell {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 4px 10px;
+}
+.tableColHeading {
+    font-weight: 400;
+    font-size: 14px;
+}
+.tableColsortIcon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0;
+    background: var(--colorWhite);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.tableCol:hover .tableColsortIcon{
+    opacity: 1;
+}
+.tableSortingIcon {
+    height: 10px;
+}
+.tableBodyCellValue {
+    font-weight: 400;
+    font-size: 14px;
+}
+.tableBodyCellBadge {
+    display: flex;
+    column-gap: 4px;
+    background: var(--colorPrimary100);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1px 4px;
+    border-radius: 3px;
+    align-items: center;
+}
+.tableBodyCellLink {
+    background: transparent;
+    border: 0;
+    font-weight: 400;
+    color: var(--colorPrimary);
+    text-decoration: underline;
+}
+.circularTextClip {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--colorWhite);
+    background-color: var(--colorTableHeader);
+}
+.circularTextClip.color1{
+    background: var(--colorGradient1);
+}
+.circularTextClip.color2{
+    background: var(--colorGradient2);
+}
+.circularTextClip.color3{
+    background: var(--colorGradient3);
+}
+.circularTextClip.color4{
+    background: var(--colorGradient4);
+}
+.circularTextClip.color5{
+    background: var(--colorGradient5);
+}
+.circularTextClip.color6{
+    background: var(--colorGradient6);
+}
+.tableBodyCellBadge.badgeInvited {
+    background: var(--colorYellow100);
+    color: var(--colorYellowDark);
+}
+.tableBodyCellBadge.badgeInvited img{
+    height: 12px;
+}
+.tableBodyCellBadge.badgeCancel {
+   
+    background: var(--colorRed100);
+    color: var(--colorRed);
+}
+.tableBodyCellBadge.badgeCancel img{
+    height: 12px;
+}
+.tableBodyCellBadge.badgeActive {
+    color: var(--colorGreen);
+    background: var(--colorGreen100);
+}
+.tableBodyAction {
+    border: 0;
+    background: transparent;
+    font-weight: 400;
+    cursor: pointer;
+}
+.tableBodyAction.actionDelete {
+    color: var(--colorRed);
+}
+.tableBodyAction.actionEdit {
+    color: var(--colorPrimary);
+}
+.tableBodyAction.actionView {
+    color: var(--colorGreen);
+}

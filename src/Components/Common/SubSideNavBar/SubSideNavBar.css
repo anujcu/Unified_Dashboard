@@ -1,0 +1,156 @@
+.SubSideNavBarHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 0px 10px;
+    padding-right: 0;
+    margin-bottom: 9px;
+}
+.SubSideNavBarHeadingInfo {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.SubSideNavBarHeadingInfo span {
+    font-weight: 400;
+    font-size: 18px;
+}
+.subMenuIconTasks {
+    height: 19px;
+    width: 19px;
+}
+.SubSideNavBarHeadingRight {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.moreOptionWrapper {
+    position: relative;
+}
+.subSideMenuMoreOptions {
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.subSideMenuMoreOptions:hover{
+    background: var(--colorWhite);
+    cursor: pointer;
+}
+.collapsesubMenu {
+    height: 26px;
+    width: 25px;
+    border: 1px solid var(--colorGray);
+    background: var(--colorWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(90deg);
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+}
+.sideMenuItemToggleIcon {
+    height: 17px;
+}
+.submenuRepeatItemWrapper{
+    padding: 0 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 260px;
+}
+.submenuRepeatItem {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.submenuRepeatItem:hover{
+    background-color: var(--colorWhite);
+}
+.submenuItemInfo {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+}
+.submenuItemInfo span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.angleDownSubMenu {
+    height: 17px;
+    width: 17px;
+}
+.submenuIconCollapse span {
+    font-weight: 400;
+    color: var(--colorPrimary);
+}
+.subMenuChildLinks {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 10px;
+    padding-left: 41px;
+    cursor: pointer;
+}
+.subMenuPlus {
+    height: 16px;
+}
+.subSideMenuAddTaskHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 19px;
+    border-top: 1px solid var(--colorGray);
+    margin-top: 5px;
+}
+.subSideMenuAddTaskButton {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+}
+.subSideMenuAddTaskHeading .SubSideNavBarHeadingInfo span {
+    font-weight: 400;
+    font-size: 16px;
+}
+.itemTaskNameWrapper {
+    padding: 0 10px;
+}
+.itemTaskName {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    padding: 4px 10px;
+}
+.itemTaskName span {
+    font-weight: 400;
+    font-size: 14px;
+}
+.itemSubTaskName {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 7px 12px;
+    font-size: 13px;
+    
+}
+.itemSubTaskName span{
+    font-weight: 400;
+    color:var(--colorBlack50);
+}
+.taskItemsWrapper
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 250px;
+}

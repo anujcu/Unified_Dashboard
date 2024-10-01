@@ -1,0 +1,51 @@
+{
+    "subMenuItems": [
+        {
+            "id": "1",
+            "name": "Task",
+            "menuIcon": "./src/assets/img/Icon_task.svg",
+            "isOpen": false,
+            "className":"subMenuIconTask",
+            "subMenu": [],
+            "isBadge":true
+        },
+        {
+            "id": "2",
+            "name": "Subscribed",
+            "menuIcon": "./src/assets/img/Icon_subscribed.svg",
+            "isOpen": false,
+            "className":"subMenuIconSubscribe",
+            "subMenu": [],
+            "isBadge":false
+        },
+        {
+            "id": "3",
+            "name": "Activities",
+            "menuIcon": "./src/assets/img/Icon_activities.svg",
+            "isOpen": false,
+            "className":"subMenuIconActivities",
+            "subMenu": [],
+            "isBadge":false
+        },
+        {
+        "id": "4",
+        "name": "Quick Links",
+        "menuIcon": "./src/assets/img/Icon_quickLinks.svg",
+        "isOpen": true,
+        "className":"subMenuIconQuickLinks",
+        "subMenu": [{
+            "name":"All Tasks"
+        },
+        {
+            "name":"Created"
+        },
+        {
+            "name":"Assign Tasks"
+        },
+        {
+            "name":"Completed"
+        }],
+        "isBadge":false
+    }
+]
+}

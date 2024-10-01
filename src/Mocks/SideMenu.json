@@ -1,0 +1,63 @@
+{
+    "sideMenu": [
+        {
+        "id": "1",
+        "name": "Organization",
+        "menuIcon": "./src/assets/img/Icon_organization.svg",
+        "isOpen": true,
+        "className":"iconOrganization",
+        "subMenu": [{
+            "name":"Member and Department",
+            "isActive":true
+        },
+        {
+            "name":"Role",
+            "isActive":false
+
+        },
+        {
+            "name":"Unit",
+            "isActive":false
+        },
+        {
+            "name":"User Group",
+            "isActive":false
+        },
+        {
+            "name":"Field Management",
+            "isActive":false
+        }]
+    },
+    {
+        "id": "2",
+        "name": "Trusted Party",
+        "menuIcon": "./src/assets/img/Icon_organization.svg",
+        "isOpen": false,
+        "className":"iconTrustedParty",
+        "subMenu": [{
+            "name":"Organization List",
+            "isActive":false
+        },
+        {
+            "name":"Global Setting",
+            "isActive":false
+        }]
+    },
+    {
+        "id": "3",
+        "name": "WorkPlace",
+        "menuIcon": "./src/assets/img/Icon_workplace.svg",
+        "isOpen": false,
+        "className":"iconWorkPlace",
+        "subMenu": []
+    },
+    {
+        "id": "4",
+        "name": "Settings",
+        "menuIcon": "./src/assets/img/Icon_settings.svg",
+        "isOpen": false,
+        "className":"iconSetting",
+        "subMenu": []
+    }
+]
+}

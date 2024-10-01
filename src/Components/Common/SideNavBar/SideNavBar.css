@@ -1,0 +1,76 @@
+.sideManuItemWrapper{
+    position: relative;
+}
+.SideNavBarHeading,.sideMenuItem,.SideNavBarFooterItem
+{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 4px 0;
+    position: relative;
+}
+.SideNavBarHeading img,.sideMenuItem img,.SideNavBarFooterItem img{
+    height: 24px;
+    width: 24px;
+}
+.SideNavBarHeading span,.sideMenuItem span,.SideNavBarFooterItem span{
+    font-weight: 400;
+    font-size: 16px;
+}
+.sideMenuItem span{
+    font-size: 15px;
+}
+.sideMenuItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sideMenuItemInfo {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+.sideMenuItemInfo img {
+    height: 28px;
+    width: 28px;
+}
+.sideMenuItemToggleIconBtn {
+    background: transparent;
+    border: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sideMenuItem .sideMenuItemToggleIcon {
+    height: 18px;
+    width: 18px;
+}
+.sideMenuItemSubItem {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 0;
+    padding-left: 34px;
+}
+.SideNavBarFooter {
+    border-top: 1px solid var(--colorGray);
+}
+.SideNavBarBody {
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.sideMenuItemSubItem.active {
+    color: var(--colorPrimary);
+}
+.sideMenuItemInfo img.iconWorkPlace {
+    height: 23px;
+    width: 28px;
+}
+
+.sideMenuItemInfo img.iconSetting
+ {
+    height: 23px;
+    width: 28px;
+}
+

@@ -1,0 +1,117 @@
+.HeaderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: var(--colorWhite);
+    height: 45px;
+    border-bottom: 1px solid var(--colorLightGray);
+}
+.HeaderLogo {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    min-width: 226px;
+}
+.logoImage {
+    width: 30px;
+}
+.HeaderLogo span {
+    font-size: 16px;
+    font-weight: 600;
+}
+.HeaderLeft {
+    display: flex;
+    align-items: center;
+}
+.Breadcrumb{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    background: var(--colorPrimary100);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.Breadcrumb img{
+    height: 20px;
+}
+.Breadcrumb span{
+    font-size: 13px;
+    color: var(--colorPrimary);
+    font-weight: 400;
+}
+.HeaderRight {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.HeaderButtonSupport,.HeaderButtonHelp,.HeaderButtonMenu {
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+.HeaderButtonSupport:hover,.HeaderButtonHelp:hover,.HeaderButtonMenu:hover{
+    cursor: pointer;
+}
+.HeaderUserDetails {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.HeaderUSerDetailsNameLabel {
+    height: 30px;
+    width: 30px;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.HeaderButtonSupportImg {
+    height: 23px;
+}
+.HeaderButtonHelpImg {
+    height: 18px;
+}
+.HeaderUserDetailsInfoTitle {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+}
+.HeaderUserDetailsInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-end;
+}
+.HeaderUserDetailsInfoRole {
+    margin: 0;
+    font-size: 11px;
+    line-height: 11px;
+    background: var(--colorPrimary100);
+    color: var(--colorPrimary);
+    padding: 1px 5px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 400;
+    margin-top: 1px;
+}
+.HeaderButtonMenuImg {
+    height: 17px;
+    border-left: 1px solid var(--colorGray);
+    padding-left: 10px;
+}
