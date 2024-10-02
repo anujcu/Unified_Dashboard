@@ -14,16 +14,8 @@ const SideNavItem=(props)=>{
     
         //handle Collapse Menu Items
    
-        const [toggleMenu,setToggleMenu]=useState(0)
-        const handleTogleMenu=(i)=>{
-            console.log('toggleMenu before',toggleMenu);
-           if(toggleMenu==i){
-            setToggleMenu(0);
-           }
-           setToggleMenu(i);
-           console.log('toggleMenu after',toggleMenu);
-           console.log('Props VAlue',props.index);
-       }  
+        const [toggleMenu,setToggleMenu]=useState(false)
+  
   
 
      const menuItems=props;
@@ -38,8 +30,8 @@ const SideNavItem=(props)=>{
             </div>
             {
                 SubmenuItems.length==0?'':<button 
-                className={`sideMenuItemToggleIconBtn ${ toggleMenu==props.index?'':'normal'}`}
-                 onClick={()=>handleTogleMenu(props.index)}>
+                className={`sideMenuItemToggleIconBtn ${ toggleMenu?'':'normal'}`}
+                 onClick={()=>setToggleMenu(!toggleMenu)}>
                 <img src={ICON_ANGLE_DOWN} alt="menuItems.menuItems.name" className="sideMenuItemToggleIcon" />
                 </button>
             }
@@ -47,7 +39,7 @@ const SideNavItem=(props)=>{
         </div>
         {    
               SubmenuItems.length==0?'':
-              <div className={`sideMenuItemSubItemList ${toggleMenu==props.index?'show':'hide'}`}>
+              <div className={`sideMenuItemSubItemList ${toggleMenu?'show':'hide'}`}>
               {
                    SubmenuItems.map((item)=>
                    {

@@ -47,7 +47,7 @@ const SideNavBar=()=>{
            
             <div className="SideNavBarBody">
             {
-                sideMenu.map((item,index)=><SideNavItem key={index} index={index} menuItems={item}/>)
+                sideMenu.map((item)=><SideNavItem key={item.id} menuItems={item}/>)
             }
             </div>
             <div className="SideNavBarFooter">
