@@ -156,3 +156,20 @@
 .SideNavBarWrapper.collapsed  .sideMenuItemSubItem:hover{
     color:var(--colorPrimary);
 }
+.sideMenuItemToggleIconBtn.normal {
+    transform: rotate(-90deg);
+}
+.sideMenuItemSubItemList.hide {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+.sideMenuItemSubItemList.show {
+    transform: scale(1);
+    transform-origin: top left;
+    transition: all 0.3s ease;
+    max-height: 200px;
+    overflow: visible;
+}

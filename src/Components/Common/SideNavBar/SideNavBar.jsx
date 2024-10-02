@@ -33,6 +33,7 @@ const SideNavBar=()=>{
 
     return(
         <div className={`SideNavBarWrapper ${tFlag?'collapsed':''}`}>
+            {/* Top Fixed Link */}
             <NavLink to="/" 
     onClick={()=>updateBreadcrumbHande([ {name:"Dashboard",icon:"./src/assets/img/Icon_organizationManagement.svg"}])}
     className={({ isActive }) => (isActive ? 'active' : 'inactive')}
@@ -46,7 +47,7 @@ const SideNavBar=()=>{
            
             <div className="SideNavBarBody">
             {
-                sideMenu.map((item)=><SideNavItem key={item.id} menuItems={item}/>)
+                sideMenu.map((item,index)=><SideNavItem key={index} index={index} menuItems={item}/>)
             }
             </div>
             <div className="SideNavBarFooter">
