@@ -1,0 +1,102 @@
+.TableDetailsWrapper{
+  position: fixed;
+  background: #00000075;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.TableDetailsInner {
+  width: 400px;
+  height: 100vh;
+  background: var(--colorWhite);
+  padding-top: 50px;
+}
+.TableDetailsHeaderTitle {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-bottom: 1px solid var(--colorGray);
+}
+.TableSelectedDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  border-bottom: 1px solid var(--colorGray);
+}
+.TableSelectedDetailsLeft {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.TableMoreAction {
+  background: transparent;
+  color: var(--colorPrimary);
+  font-weight: 400;
+  border: 0;
+  font-size: 14px;
+}
+.TableDetailsBody{
+  padding: 15px;
+}
+.TableDetailsBtn {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 4px 10px;
+  border: 1px solid var(--colorPrimary);
+  color: var(--colorPrimary);
+  border-radius: 5px;
+  height: 30px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.TableDetailsBtn.Btn_Primary {
+  color: var(--colorWhite);
+  background: var(--colorPrimary);
+}
+.TableDetailsFooter {
+  display: flex;
+  column-gap: 10px;
+  padding: 7px 15px;
+  border-top: 1px solid var(--colorGray);
+  justify-content: flex-end;
+}
+.TableDetailsBody {
+  padding: 15px;
+  height: calc(100vh - 195px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.formContorlWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.formContorlLabel {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 2px;
+  display: block;
+  color:var(--colorBlack50)
+}
+.formContorlInput {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 6px 7px;
+  border: 1px solid var(--colorGray);
+  border-radius: 4px;
+}
+.formContorlInput:focus{
+  outline: none;
+}
+.formContorlInput.readOnly{
+  border: 0;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--colorGreen100);
+  border-radius: 0;
+}

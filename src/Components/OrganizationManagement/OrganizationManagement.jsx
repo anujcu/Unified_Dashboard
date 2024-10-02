@@ -2,12 +2,26 @@ import { useSelector } from "react-redux";
 import { ICON_ACTIVE_BADGE, ICON_ADD, ICON_CANCEL_BADGE, ICON_FILTER_OPTION, ICON_INVITE_MEMBER, ICON_INVITED_BADGE, ICON_TABLE_SORTING } from "../../Constants/Constants";
 import SubSideNavBar from "../Common/SubSideNavBar/SubSideNavBar";
 import './OrganizationManagement.css';
+import EditTableDetails from "../Common/EditTableDetails/EditTableDetails";
+import ViewTableDetails from "../Common/ViewTableDetails/ViewTableDetails";
+import { useState } from "react";
 
 const OrganizationManagement=()=>{
     //get the class name when sidemenu is collapsed
   const toggleMenuFlag=useSelector((store)=>store.sideMenu.toggleMenu);
-
+  const [viewDetails, setViewDeatails]=useState(false);
+  const [editDetails, setEditDeatails]=useState(false);
+  //view Details Handle
+  const editDetailsHandle=()=>{
+    setEditDeatails(true);
+  }
+  //edit Details Handle
+ const viewDetailsHandle=()=>{
+    setViewDeatails(true);
+  }
+  
     return(
+        <>
         <div className={`BodyContentWrapper ${toggleMenuFlag?'':'menuCollapsed'}`}>
             <SubSideNavBar/>
         <div className="organizationManagementPage">
@@ -123,8 +137,8 @@ const OrganizationManagement=()=>{
                 </div>
                 <div className="tableBodyCell">
                     <button className="tableBodyAction actionDelete">Delete</button>
-                    <button className="tableBodyAction actionEdit">Edit</button>
-                    <button className="tableBodyAction actionView">View</button>
+                    <button className="tableBodyAction actionEdit" onClick={editDetailsHandle}>Edit</button>
+                    <button className="tableBodyAction actionView" onClick={viewDetailsHandle}>View</button>
                 </div>
                 </div>
                 <div className="tableBodyRow">
@@ -547,6 +561,9 @@ const OrganizationManagement=()=>{
       </div>
         </div>
         </div>
+        {editDetails?<EditTableDetails/>:''}
+        {viewDetails?<ViewTableDetails/>:''}
+        </>
         
     )
 }
