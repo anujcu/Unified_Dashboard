@@ -2,6 +2,7 @@ import { ICON_ANGLE_DOWN, ICON_ANGLE_DOWN_SOLID, ICON_PLUS, ICON_SUB_TASK, ICON_
 import './SubSideNavBar.css';
 import subMenuList from "../../../Mocks/SubSideNavBar.json";
 import SubSideNavBarItem from './SubSideNavBarItem';
+import { useState } from 'react';
 
 const SubSideNavBar=()=>{
 
@@ -17,10 +18,10 @@ const SubSideNavBar=()=>{
         }
     ];
     //collapseable task
-
+ const [toggleSubMenu, setToggleSumbmenu]=useState(true);
   
     return(
-        <div className="SubSideNavBar">
+        <div className={`SubSideNavBar ${toggleSubMenu?'':'collapsed'}`}>
            <div className="SubSideNavBarHeading">
             <div className="SubSideNavBarHeadingInfo">
             <img src={ICON_TASKS} alt="iconTask" className="subMenuIconTasks"/>
@@ -33,7 +34,8 @@ const SubSideNavBar=()=>{
                     </button>
                     <div className="moreOptionsWrapper"></div>
                 </div>
-               <button className='collapsesubMenu'>
+                {/* Menu Collapse Button */}
+               <button className='collapsesubMenu' onClick={()=>setToggleSumbmenu(!toggleSubMenu)}>
                <img src={ICON_ANGLE_DOWN} alt="collapsesubMenu" className="sideMenuItemToggleIcon"/>
                </button>
             </div>

@@ -89,6 +89,7 @@
 .SideNavBarWrapper.collapsed{
     position: relative;
     width: 50px;
+    min-width: 50px;
     padding-left: 0;
     padding-right: 0;
     display: flex;
@@ -135,10 +136,10 @@
     border: 1px solid var(--colorGray);
     z-index: 1;
     padding: 12px;
-    top: 8px;
-    left: 39px;
-    border-radius: 12px;
-    display:none;
+    top: -1px;
+    left: 48px;
+    border-radius: 7px;
+    display: none;
 }
 .SideNavBarWrapper.collapsed .SideNavBarHeading,.SideNavBarWrapper.collapsed  .sideMenuItem,.SideNavBarWrapper.collapsed  .SideNavBarFooterItem,
 .SideNavBarWrapper.collapsed .sideMenuItemInfo{
@@ -169,4 +170,12 @@
     transition: all 0.3s linear;
     max-height: 200px;
     overflow: visible;
+}
+.SideNavBarWrapper.collapsed .sideMenuItemSubItemList{
+    transition: all 0.3s linear;
+    max-height: 400px;
+    overflow: visible;
+}
+.SideNavBarWrapper.collapsed .sideManuItemWrapper:hover {
+    background: var(--colorGray);
 }

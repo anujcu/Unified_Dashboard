@@ -7,28 +7,33 @@ const SubSideNavBarItem=(props)=>{
      const [subMenuToggle,setSubMenuToggle]=useState(true);
 
     return(
-        <>
+      
+        <div className="submenuRepeatItemWrapper">
         <div className='submenuRepeatItem'>
         <div className='submenuItemInfo'>
         <img src={menuItemList.menuIcon} alt="iconTask" className={menuItemList.className}/>
         <span>{menuItemList.name}</span>
         </div>
         <div className='submenuIconCollapse'>
-        
         {
             menuItemList.isBadge?<span>8</span>:            
-                subMenu.length==0?'': <img onClick={()=>setSubMenuToggle(!subMenuToggle)} src={ICON_ANGLE_DOWN} alt="collapsesubMenu" className="angleDownSubMenu"/>
+            subMenu.length==0?'': <img onClick={()=>setSubMenuToggle(!subMenuToggle)} src={ICON_ANGLE_DOWN} alt="collapsesubMenu" className="angleDownSubMenu"/>
              
             
         }
-        
         </div>
      </div>
-        {   subMenuToggle?subMenu.map((subItem,index)=><div key={index} className="subMenuChildLinks">{subItem.name}</div>):''
+     {
+        subMenu.length==0?'': 
+        <div className="subchildWrapper">
+        {    
+        subMenuToggle?
+        subMenu.map((subItem,index)=><div key={index} className="subMenuChildLinks">{subItem.name}</div>):''
         }
-   
-</> 
-        
+    </div>
+     }
+ 
+        </div>
     )
 }
 export default SubSideNavBarItem;

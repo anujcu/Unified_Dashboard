@@ -62,15 +62,15 @@ body{
 }
 
 .SideNavBarWrapper {
-  width: 260px;
+  width: 220px;
+  min-width: 220px;
   height: calc(100vh - 45px);
   align-items: flex-start;
   background: var(--colorWhite);
   padding: 15px 10px;
 }
 .SubSideNavBar {
-  width: 100%;
-  max-width: 240px;
+  width:260px;
   height: calc(100vh - 45px);
   background: var(--colorPrimary100);
   border-right: 1px solid var(--colorGray);

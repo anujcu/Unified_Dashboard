@@ -157,3 +157,79 @@
 .subMenuChildLinks:hover{
     color:var(--colorPrimary);
 }
+/* collapse CSS */
+.submenuItemInfo span{
+    transition: all 0.3s  ease;
+}
+.SubSideNavBar{
+    transition: all 0.3s linear;
+}
+.SubSideNavBar.collapsed {
+    width: 62px;
+    position: relative;
+}
+.SubSideNavBar.collapsed .submenuItemInfo span,
+.SubSideNavBar.collapsed .SubSideNavBarHeadingInfo span
+{
+    font-size: 0;
+}
+.SubSideNavBar.collapsed .moreOptionWrapper,
+.SubSideNavBar.collapsed .submenuIconCollapse,
+.SubSideNavBar.collapsed .moreOptionWrapper,
+.SubSideNavBar.collapsed .subchildWrapper,
+.SubSideNavBar.collapsed .taskItemsWrapper,
+.SubSideNavBar.collapsed .subSideMenuAddTaskButton
+{
+    display: none;
+}
+.SubSideNavBar.collapsed .submenuItemInfo{
+    column-gap: 0;
+}
+.SubSideNavBar.collapsed .submenuRepeatItem {
+    padding: 5px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+    padding: 10px 0;
+    margin: 0;
+}
+.SubSideNavBar.collapsed .collapsesubMenu img {
+    transform: rotate(180deg);
+}
+.SubSideNavBar.collapsed  .submenuRepeatItemWrapper {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.SubSideNavBar.collapsed .submenuRepeatItemWrapper .submenuRepeatItem:hover {
+    background: var(--colorGray);
+}
+.SubSideNavBar .submenuRepeatItemWrapper{
+    position: relative;
+    overflow: visible;
+}
+.SubSideNavBar.collapsed .subchildWrapper {
+    position: absolute;
+    display: block;
+    width: 120px;
+    left: 55px;
+    background: var(--colorWhite);
+    border: 1px solid var(--colorGray);
+    border-radius: 8px;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+    align-items: flex-start;
+}
+.SubSideNavBar.collapsed .subchildWrapper .subMenuChildLinks .subMenuChildLinks {
+    padding: 5px 15px;
+}
+.SubSideNavBar .submenuRepeatItemWrapper:hover > .subchildWrapper{
+    display: block;
+}
